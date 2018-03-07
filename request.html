@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taxi service</title>
+        <style type="text/css">
+            .table1 {
+                padding-right: 20px;
+                padding-top: 0px;
+            }
+            #tab1 {
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-bottom: 30px;
+                border: solid 1.5px;
+            }
+        </style>        
+    </head>
+    <body >
+    <div class="table1">
+    <table id="tab1" width="660">
+                
+        <tr class="r1">
+            <td colspan="3">
+                <h1>Request a ride</h1>
+            </td>
+        </tr>
+        <form name="form2" action="post.php" method="post">
+        <tr>
+            <td align="center"><b>NIC:</b></td>
+            <td colspan="2"><input type="text" name="nic"></td>
+        </tr>
+        <tr>
+            <td align="center"><b>Choose your vehicle:</b></td>
+            <td colspan="2">
+                <div class="container">
+                    <select name="colors" class="con2">
+                          <option value="Red">Red</option>
+                          <option value="Purple">Purple</option>
+                          <option value="Blue">Blue</option>
+                          <option value="Green">Green</option>
+                    </select>
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td align="center"><b>Details:</b></td>
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td width="83" align="center"><b>Your location:</b></td>
+                        <td><input type="text" name="location"></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><b>Destination:</b></td>
+                        <td><input type="text" name="destination"></td>
+                    </tr>
+                </table>
+            </td>
+            
+            
+        </tr>
+        <tr>
+            <td align="center"><b>Your Comments:</b></td>
+            <td colspan="2">
+                <div class="container">
+                    <textarea class="con2" rows="12" cols="58" name="comment"></textarea>
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><input type="submit" value="Request"></td>
+        </tr>
+        </form>
+    </table></div>
+    </body>
+</html>
